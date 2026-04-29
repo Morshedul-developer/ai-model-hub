@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "ChatGPT",
+    "description": "Advanced AI chatbot for writing and coding.\nGreat for research, ideas, and productivity.",
+    "price": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
+    "status": "popular"
+  },
+  {
+    "id": 2,
+    "title": "Claude",
+    "description": "Helpful AI assistant by Anthropic.\nExcellent for long documents and reasoning.",
+    "price": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Claude_AI_logo.svg",
+    "status": "favourite"
+  },
+  {
+    "id": 3,
+    "title": "Gemini",
+    "description": "Google's multimodal AI assistant.\nStrong for search and workspace tasks.",
+    "price": 0,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Google-gemini-icon.svg",
+    "status": "popular"
+  },
+  {
+    "id": 4,
+    "title": "Midjourney",
+    "description": "AI image generator for stunning art.\nPopular among designers and creators.",
+    "price": 10,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png",
+    "status": "mostwanted"
+  },
+  {
+    "id": 5,
+    "title": "Canva Magic Studio",
+    "description": "AI-powered design tools in Canva.\nCreate graphics, text, and presentations fast.",
+    "price": 15,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg",
+    "status": "favourite"
+  },
+  {
+    "id": 6,
+    "title": "Notion AI",
+    "description": "Smart writing and productivity assistant.\nSummarizes notes and drafts content quickly.",
+    "price": 10,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
+    "status": "popular"
+  },
+  {
+    "id": 7,
+    "title": "Jasper",
+    "description": "AI content generation platform.\nUseful for marketers and copywriters.",
+    "price": 39,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Jasper_AI_logo.png",
+    "status": "mostwanted"
+  },
+  {
+    "id": 8,
+    "title": "Grammarly",
+    "description": "AI writing assistant for grammar.\nImproves clarity and tone instantly.",
+    "price": 12,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Grammarly_icon.svg",
+    "status": "favourite"
+  },
+  {
+    "id": 9,
+    "title": "Perplexity",
+    "description": "AI answer engine with sources.\nGreat for research and fact-finding.",
+    "price": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Perplexity_AI_logo.png",
+    "status": "popular"
+  },
+  {
+    "id": 10,
+    "title": "Runway",
+    "description": "AI video editing and generation.\nUsed for creative media workflows.",
+    "price": 15,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Runway_logo.png",
+    "status": "mostwanted"
+  },
+  {
+    "id": 11,
+    "title": "Copy.ai",
+    "description": "AI copywriting tool for business.\nGenerates ads, blogs, and emails.",
+    "price": 36,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Copy_ai_logo.png",
+    "status": "popular"
+  },
+  {
+    "id": 12,
+    "title": "GitHub Copilot",
+    "description": "AI coding assistant for developers.\nSpeeds up coding with smart suggestions.",
+    "price": 10,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/GitHub_Copilot_logo.svg",
+    "status": "favourite"
+  }
+]
