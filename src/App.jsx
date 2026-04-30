@@ -31,7 +31,7 @@ function App() {
         {activeTab === "Models" && (
           <Models modelPromise={modelPromise} modelCards={modelCards} setModelCards={setModelCards} ></Models>
         )}
-        {activeTab === "Cart" && <Cart modelCards={modelCards}></Cart>}
+        {activeTab === "Cart" && <Cart modelCards={modelCards} setModelCards={setModelCards} ></Cart>}
       </Suspense>
       <Footer></Footer>
     </>
