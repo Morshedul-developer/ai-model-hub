@@ -20,7 +20,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <Banner></Banner>
-      <Tabs modelCards={modelCards} setActiveTab={setActiveTab}></Tabs>
+      <Tabs modelCards={modelCards} activeTab={activeTab} setActiveTab={setActiveTab}></Tabs>
       <Suspense
         fallback={
           <div className="flex items-center justify-center h-64">

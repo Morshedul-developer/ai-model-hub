@@ -1,4 +1,4 @@
-const Tabs = ({ modelCards, setActiveTab }) => {
+const Tabs = ({ modelCards, activeTab, setActiveTab }) => {
   return (
     <>
       {/* name of each tab group should be unique */}
@@ -7,7 +7,13 @@ const Tabs = ({ modelCards, setActiveTab }) => {
           onClick={() => setActiveTab("Models")}
           type="radio"
           name="my_tabs_1"
-          className="tab w-40 rounded-full"
+          className="tab w-40 rounded-full font-semibold"
+          style={{
+            background:
+              activeTab === "Models" &&
+              "linear-gradient(135deg, #ff416c, #ff4b2b)",
+              color: activeTab === "Models" && "white",
+          }}
           aria-label="Models"
           defaultChecked
         />
@@ -15,7 +21,13 @@ const Tabs = ({ modelCards, setActiveTab }) => {
           onClick={() => setActiveTab("Cart")}
           type="radio"
           name="my_tabs_1"
-          className="tab w-40 rounded-full"
+          className="tab w-40 rounded-full font-semibold"
+          style={{
+            background:
+              activeTab === "Cart" &&
+              "linear-gradient(135deg, #6366f1, #8b5cf6)",
+              color: activeTab === "Cart" && "white",
+          }}
           aria-label={`Cart (${modelCards.length})`}
         />
       </div>
