@@ -8,13 +8,13 @@ const Cart = ({ modelCards, setModelCards }) => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto py-20 space-y-4">
+    <div className="max-w-7xl mx-auto py-20 space-y-7">
       <h1 className="text-4xl font-bold">Your Carts</h1>
       {modelCards.length === 0 ? (
         <p className="text-center text-xl text-gray-500">Your cart is empty</p>
       ) : (
         <>
-          <div className="space-y-5">
+          <div className="space-y-6">
             {modelCards.map((card) => (
               <CartCard key={card.id} card={card} />
             ))}

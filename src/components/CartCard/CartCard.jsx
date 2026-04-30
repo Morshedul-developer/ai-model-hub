@@ -1,7 +1,7 @@
 const CartCard = ({ card }) => {
   return (
     <>
-    <div className="border p-5 rounded-xl flex items-center justify-between">
+    <div className="border border-gray-200 shadow-xl p-5 rounded-xl flex items-center justify-between">
       <div className="flex items-center gap-4">
         <div>
           <img
@@ -13,7 +13,11 @@ const CartCard = ({ card }) => {
         <h2 className="text-xl font-bold">{card.title}</h2>
       </div>
       <div>
+        <p className="text-gray-500">{card.description}</p>
+      </div>
+      <div className="flex items-center gap-5">
         <p className="text-lg font-bold">${card.price}/month</p>
+        <button className="btn rounded-full btn-error text-white">X</button>
       </div>
     </div>
     </>
