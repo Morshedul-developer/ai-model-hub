@@ -13,6 +13,7 @@ const getModels = async () => {
 
 function App() {
   const [activeTab, setActiveTab] = useState("Models");
+  const [modelCards, setModelCards] = useState([]);
 
   const modelPromise = getModels();
   return (
@@ -28,9 +29,9 @@ function App() {
         }
       >
         {activeTab === "Models" && (
-          <Models modelPromise={modelPromise}></Models>
+          <Models modelPromise={modelPromise} modelCards={modelCards} setModelCards={setModelCards} ></Models>
         )}
-        {activeTab === "Cart" && <Cart></Cart>}
+        {activeTab === "Cart" && <Cart modelCards={modelCards}></Cart>}
       </Suspense>
       <Footer></Footer>
     </>

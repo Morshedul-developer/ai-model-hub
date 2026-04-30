@@ -1,9 +1,10 @@
 import { useState } from "react";
 
-const Model = ({ model }) => {
+const Model = ({ model, modelCards, setModelCards }) => {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const handleSubscribe = () => {
     setIsSubscribed(true);
+    setModelCards([...modelCards, model]);
   };
 
   const { title, description, price, image } = model;
