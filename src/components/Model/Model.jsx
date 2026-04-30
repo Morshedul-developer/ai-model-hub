@@ -5,6 +5,12 @@ const Model = ({ model, modelCards, setModelCards }) => {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const handleSubscribe = () => {
     setIsSubscribed(true);
+    const alreadySubscribed = modelCards.find((m) => m.id === model.id);
+    if (alreadySubscribed) {
+      toast.error(`Already subscribed to ${model.title}.`);
+      return;
+    }
+
     setModelCards([...modelCards, model]);
     toast.success(`Subscribed to ${model.title} successfully!`);
   };
