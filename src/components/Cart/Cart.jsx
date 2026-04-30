@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import CartCard from "../CartCard/CartCard";
 
 const Cart = ({ modelCards, setModelCards }) => {
@@ -5,11 +6,13 @@ const Cart = ({ modelCards, setModelCards }) => {
 
   const handleCheckout = () => {
     setModelCards([]);
+    toast.success("Checkout successful! Thank you for your purchase.");
   };
 
   const handleRemoveCart = (item) => {
     const filteredCards = modelCards.filter(card => card.id !== item.id);
     setModelCards(filteredCards);
+    toast.info(`${item.title} removed from cart.`);
   }
 
   return (

@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Model = ({ model, modelCards, setModelCards }) => {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const handleSubscribe = () => {
     setIsSubscribed(true);
     setModelCards([...modelCards, model]);
+    toast.success(`Subscribed to ${model.title} successfully!`);
   };
 
   const { title, description, price, image } = model;
