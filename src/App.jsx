@@ -3,6 +3,7 @@ import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
 import Models from "./components/Models/Models";
 import NavBar from "./components/NavBar/NavBar";
+import Tabs from "./components/Tabs/Tabs";
 
 const getModels = async () => {
   const res = await fetch("/models.json");
@@ -15,6 +16,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <Banner></Banner>
+      <Tabs></Tabs>
       <Suspense fallback={<span className="loading loading-spinner text-primary"></span>}>
         <Models modelPromise={modelPromise}></Models>
       </Suspense>
