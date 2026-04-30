@@ -1,4 +1,4 @@
-const CartCard = ({ card }) => {
+const CartCard = ({ card, handleRemoveCart }) => {
   return (
     <>
     <div className="border border-gray-200 shadow-xl p-5 rounded-xl flex items-center justify-between">
@@ -17,7 +17,12 @@ const CartCard = ({ card }) => {
       </div>
       <div className="flex items-center gap-5">
         <p className="text-lg font-bold">${card.price}/month</p>
-        <button className="btn rounded-full btn-error text-white">X</button>
+        <button 
+          onClick={() => handleRemoveCart(card)}
+          className="btn rounded-full btn-error text-white"
+        >
+          X
+        </button>
       </div>
     </div>
     </>

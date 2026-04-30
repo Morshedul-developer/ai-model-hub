@@ -7,6 +7,11 @@ const Cart = ({ modelCards, setModelCards }) => {
     setModelCards([]);
   };
 
+  const handleRemoveCart = (item) => {
+    const filteredCards = modelCards.filter(card => card.id !== item.id);
+    setModelCards(filteredCards);
+  }
+
   return (
     <div className="max-w-7xl mx-auto py-20 space-y-7">
       <h1 className="text-4xl font-bold">Your Carts</h1>
@@ -16,7 +21,7 @@ const Cart = ({ modelCards, setModelCards }) => {
         <>
           <div className="space-y-6">
             {modelCards.map((card) => (
-              <CartCard key={card.id} card={card} />
+              <CartCard key={card.id} card={card} handleRemoveCart={handleRemoveCart} />
             ))}
           </div>
 
