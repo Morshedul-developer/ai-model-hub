@@ -1,4 +1,4 @@
-const Tabs = ({ setActiveTab }) => {
+const Tabs = ({ modelCards, setActiveTab }) => {
   return (
     <>
       {/* name of each tab group should be unique */}
@@ -16,7 +16,7 @@ const Tabs = ({ setActiveTab }) => {
           type="radio"
           name="my_tabs_1"
           className="tab w-40 rounded-full"
-          aria-label="Cart"
+          aria-label={`Cart (${modelCards.length})`}
         />
       </div>
     </>
